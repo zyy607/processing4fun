@@ -15,13 +15,19 @@ class Tree extends Shape
    
   }
     
-    public void drawMe()
+    void draw()
     {
-        fill(141,91,5);
-        rect(x - 10, y + 350, 20, 100); 
+        pushMatrix();
+        
+        translate(x,y);
+        noStroke();
         fill(c);
-        triangle(x, y, x - 100, y + 200, x + 100, y + 200);
-        triangle(x, y+100, x - 130, y + 300, x + 130, y + 300);
-        triangle(x, y+200, x - 160, y + 400, x + 160, y + 400);
+        rect( - 0.1*r, 1.5*r, 0.2*r, r); 
+        fill(c);
+        triangle(0, -2*r, - 1 * r, 0, r, 0);
+        triangle(0, -r, - 1.3 * r, r, 1.3 * r, r);
+        triangle(0, 0, - 1.6 * r, 2*r, 1.6 * r,2*r);
+        
+        popMatrix();
     }
 }
