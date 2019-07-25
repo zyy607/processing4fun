@@ -20,13 +20,14 @@ class Tree extends Shape
         pushMatrix();
         
         translate(x,y);
+        rotate(fRotate);
         noStroke();
         fill(c);
-        rect( - 0.1*r, 1.5*r, 0.2*r, r); 
+        rect( - 0.05*r, 0.75*r, 0.1*r, 0.5*r); 
         fill(c);
-        triangle(0, -2*r, - 1 * r, 0, r, 0);
-        triangle(0, -r, - 1.3 * r, r, 1.3 * r, r);
-        triangle(0, 0, - 1.6 * r, 2*r, 1.6 * r,2*r);
+        triangle(0, -1*r, - 0.5 * r, 0, 0.5*r, 0);
+        triangle(0, - 0.5*r, - 0.65 * r, 0.5 * r, 0.65 * r, 0.5 * r);
+        triangle(0, 0, - 0.8 * r, r, 0.8 * r,r);
         
         popMatrix();
     }

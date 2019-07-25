@@ -72,7 +72,7 @@ Shape generateOneCircle()
   
   float b = random(0,255);
   
-  int iRandom = (int)random(0,3);
+  int iRandom = (int)random(0,4);
   
   if(iRandom == 1)
   {
@@ -85,6 +85,10 @@ Shape generateOneCircle()
   else if(iRandom == 2)
   {
     return new Star5(x,y,R,color(255,255,b));
+  }
+  else if(iRandom == 3)
+  {
+    return new Tree(x,y,R,color(g,255,b));
   }
   else
   {
