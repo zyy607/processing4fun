@@ -80,7 +80,7 @@ Shape generateOneCircle()
   }
   else if(iRandom == 0)
   {
-    return new Circle(x,y,R,color(255,g,b));
+    return new Circle(x,y,R,color(b,g,255));
   }
   else if(iRandom == 2)
   {
